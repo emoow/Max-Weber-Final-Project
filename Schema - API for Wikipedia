@@ -1,0 +1,52 @@
+Schema - API for Wikipedia
+
+openapi: 3.1.0
+info:
+  title: MaxWeberSpirit API
+  description: A chatbot to help with sociology theories.
+  version: v1.0.0
+servers:
+  - url: 'https://api.maxweberspirit.com'
+paths:
+  /messages:
+    get:
+      operationId: getMessages
+      summary: Retrieves messages from the chatbot.
+      responses:
+        '200':
+          description: Successfully retrieved messages.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Message'
+    post:
+      operationId: sendMessage
+      summary: Sends a message to the chatbot.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MessageInput'
+      responses:
+        '201':
+          description: Message sent successfully.
+components:
+  schemas:
+    Message:
+      type: object
+      properties:
+        id:
+          type: integer
+        text:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+    MessageInput:
+      type: object
+      properties:
+        text:
+          type: string
