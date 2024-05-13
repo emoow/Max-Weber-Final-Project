@@ -1,0 +1,31 @@
+# Max Weber Spirit Final Project
+
+This repository contains the code and OpenAPI specification for the Max Weber Spirit GPT-powered chatbot.
+
+## Repository Structure
+
+- `privacy-policy.md`: Privacy policy for the Max Weber Spirit project.
+- `openapi.yaml`: OpenAPI specification for the chatbot API.
+- `src/`: Source code for the chatbot.
+
+## How to Use
+
+1. Clone the repository:
+    ```
+    git clone git@github.com:emoow/Max-Weber-Final-Project.git
+    ```
+
+2. Navigate to the project directory:
+    ```
+    cd Max-Weber-Final-Project
+    ```
+
+3. Follow the instructions in the `src` directory to set up and run the chatbot.
+
+## API Documentation
+
+The API documentation is provided in the `openapi.yaml` file. You can view the documentation using an OpenAPI-compatible viewer such as Swagger UI or Redoc.
+
+## Contact
+
+For any questions or issues, please contact [Your Name] at [Your Email Address].
